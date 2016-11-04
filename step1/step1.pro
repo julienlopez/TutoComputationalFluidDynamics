@@ -13,4 +13,12 @@ LIBS += -L$$QWT_LIB_PATH -lqwt
 INCLUDEPATH += $$TutoComputationalFluidDynamics_ROOT/lib
 INCLUDEPATH += $$QWT_INCLUDE_PATH
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    simulator.cpp \
+    isimulator.cpp \
+    simpleplot.cpp
+
+HEADERS += \
+    simulator.hpp \
+    isimulator.hpp \
+    simpleplot.hpp
