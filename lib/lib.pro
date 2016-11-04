@@ -2,11 +2,19 @@ include(../TutoComputationalFluidDynamics.pri)
 
 QT += core gui widgets
 
-TARGET = TutoComputationalFluidDynamicsLib
 TEMPLATE = lib
+CONFIG += staticlib
+TARGET = TutoComputationalFluidDynamicsLib
+
+include (../TutoComputationalFluidDynamics.pri)
 
 INCLUDEPATH += .
+INCLUDEPATH += $$QWT_INCLUDE_PATH
 
-HEADERS += simpleplot.hpp
+LIBS += -L$$QWT_LIB_PATH -lqwt
 
-SOURCES += simpleplot.cpp
+HEADERS += simpleplot.hpp \
+    isimulator.hpp
+
+SOURCES += simpleplot.cpp \
+    isimulator.cpp

@@ -9,6 +9,7 @@ TutoComputationalFluidDynamics_MOC_LIB = $$TutoComputationalFluidDynamics_ROOT/m
 TutoComputationalFluidDynamics_SRC = $$TutoComputationalFluidDynamics_ROOT/src
 
 DESTDIR = $$TutoComputationalFluidDynamics_BIN
+DLLDESTDIR = $$TutoComputationalFluidDynamics_BIN
 
 CONFIG += c++14
 
